@@ -5,6 +5,7 @@ docker run --rm -v ${PWD}:/io --workdir /io local-benchmarks-pbs-313 ./run_singl
 docker run --rm -v ${PWD}:/io --workdir /io local-benchmarks-pbs-314 ./run_single.sh pbs-314
 
 docker run --rm -v ${PWD}:/io --workdir /io local-benchmarks-fedora ./run_single.sh fedora
+docker run --rm -v ${PWD}:/io --workdir /io local-benchmarks-rocky ./run_single.sh rocky
 
 docker run --rm -v ${PWD}:/io --workdir /io local-benchmarks-debian ./run_single.sh debian
 docker run --rm -v ${PWD}:/io --workdir /io local-benchmarks-ubuntu ./run_single.sh ubuntu
