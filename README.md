@@ -1,5 +1,6 @@
-## Bechmarking various CPython Builds
+# Bechmarking various CPython Builds
 
+## Running benchmarks
 
 ### Linux
 
@@ -29,3 +30,16 @@ This will run the pyperformance benchmark suite for
 * Homebrew
 
 Results are stored in the `results` directory with subdirectories for each build.
+
+
+## Examining results
+
+`pyperf` can be used to examine and compare the results. This can be run using
+`uvx pyperf`. There are various sub-commands and options.
+
+One way to compare results is with the `compare_to` command, for example:
+
+```
+uvx pyperf compare_to --table --group-by-speed results/macos-homebrew/results-2026-01-19T155537.json results/macos-pbs/results-2026-01-19T123436.json
+```
+
