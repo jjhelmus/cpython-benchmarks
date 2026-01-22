@@ -11,4 +11,4 @@ docker build containers/rocky --tag 'local-benchmarks-rocky'
 
 docker build containers/debian --tag 'local-benchmarks-debian'
 docker build containers/ubuntu --tag 'local-benchmarks-ubuntu'
-docker build containers/ubuntu --tag 'local-benchmarks-ubuntu-lts'
+docker build containers/ubuntu-lts --tag 'local-benchmarks-ubuntu-lts'
