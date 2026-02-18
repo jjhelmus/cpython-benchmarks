@@ -1,0 +1,5 @@
+[benchmarks]
+
+name	metafile
+compression	<local>
+sqlite	<local>

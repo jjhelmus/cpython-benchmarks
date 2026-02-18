@@ -1,0 +1,7 @@
+[project]
+version = "0.1"
+dependencies = ["pyperf"]
+dynamic = ["name"]
+
+[tool.pyperformance]
+name = "compression"
