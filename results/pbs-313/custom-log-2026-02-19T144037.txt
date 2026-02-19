@@ -1,0 +1,184 @@
+Python benchmark suite 1.14.0
+
+Creating the virtual environment /io/tmp.x0bPey57gL/venv/cpython3.13-a225004c9245-compat-31b33d68c68a
+# /io/tmp.x0bPey57gL/bench_env/bin/python -m venv --without-pip /io/tmp.x0bPey57gL/venv/cpython3.13-a225004c9245-compat-31b33d68c68a
+# /io/tmp.x0bPey57gL/venv/cpython3.13-a225004c9245-compat-31b33d68c68a/bin/python -m ensurepip -v -U
+Using pip 25.3 from /tmp/tmpinm6c5pm/pip-25.3-py3-none-any.whl/pip (python 3.13)
+Looking in links: /tmp/tmpinm6c5pm
+Processing /tmp/tmpinm6c5pm/pip-25.3-py3-none-any.whl
+Installing collected packages: pip
+  changing mode of /io/tmp.x0bPey57gL/venv/cpython3.13-a225004c9245-compat-31b33d68c68a/bin/pip3 to 755
+  changing mode of /io/tmp.x0bPey57gL/venv/cpython3.13-a225004c9245-compat-31b33d68c68a/bin/pip3.13 to 755
+Successfully installed pip-25.3
+# /io/tmp.x0bPey57gL/venv/cpython3.13-a225004c9245-compat-31b33d68c68a/bin/python -m pip install -U 'setuptools>=18.5' wheel
+Collecting setuptools>=18.5
+  Downloading setuptools-82.0.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting wheel
+  Downloading wheel-0.46.3-py3-none-any.whl.metadata (2.4 kB)
+Collecting packaging>=24.0 (from wheel)
+  Using cached packaging-26.0-py3-none-any.whl.metadata (3.3 kB)
+Downloading setuptools-82.0.0-py3-none-any.whl (1.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 9.9 MB/s  0:00:00
+Downloading wheel-0.46.3-py3-none-any.whl (30 kB)
+Using cached packaging-26.0-py3-none-any.whl (74 kB)
+Installing collected packages: setuptools, packaging, wheel
+
+Successfully installed packaging-26.0 setuptools-82.0.0 wheel-0.46.3
+# /io/tmp.x0bPey57gL/venv/cpython3.13-a225004c9245-compat-31b33d68c68a/bin/python -m pip --version
+pip 25.3 from /io/tmp.x0bPey57gL/venv/cpython3.13-a225004c9245-compat-31b33d68c68a/lib/python3.13/site-packages/pip (python 3.13)
+
+==================================================
+( 1/2) creating venv for benchmark (compression)
+
+(trying common venv first)
+Installing requirements into the virtual environment /io/tmp.x0bPey57gL/venv/cpython3.13-a225004c9245-compat-31b33d68c68a
+# /io/tmp.x0bPey57gL/venv/cpython3.13-a225004c9245-compat-31b33d68c68a/bin/python -m pip install pyperf==2.10.0
+Collecting pyperf==2.10.0
+  Using cached pyperf-2.10.0-py3-none-any.whl.metadata (6.2 kB)
+Collecting psutil>=5.9.0 (from pyperf==2.10.0)
+  Using cached psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl.metadata (22 kB)
+Using cached pyperf-2.10.0-py3-none-any.whl (144 kB)
+Using cached psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl (155 kB)
+Installing collected packages: psutil, pyperf
+
+Successfully installed psutil-7.2.2 pyperf-2.10.0
+Installing requirements into the virtual environment /io/tmp.x0bPey57gL/venv/cpython3.13-a225004c9245-compat-31b33d68c68a
+# /io/tmp.x0bPey57gL/venv/cpython3.13-a225004c9245-compat-31b33d68c68a/bin/python -m pip install psutil
+Requirement already satisfied: psutil in ./venv/cpython3.13-a225004c9245-compat-31b33d68c68a/lib/python3.13/site-packages (7.2.2)
+# /io/tmp.x0bPey57gL/venv/cpython3.13-a225004c9245-compat-31b33d68c68a/bin/python -m pip freeze
+packaging==26.0
+psutil==7.2.2
+pyperf==2.10.0
+setuptools==82.0.0
+wheel==0.46.3
+# /io/tmp.x0bPey57gL/venv/cpython3.13-a225004c9245-compat-31b33d68c68a/bin/python -m pip freeze
+packaging==26.0
+psutil==7.2.2
+pyperf==2.10.0
+setuptools==82.0.0
+wheel==0.46.3
+
+==================================================
+( 2/2) creating venv for benchmark (sqlite)
+
+(trying common venv first)
+Installing requirements into the virtual environment /io/tmp.x0bPey57gL/venv/cpython3.13-a225004c9245-compat-31b33d68c68a
+# /io/tmp.x0bPey57gL/venv/cpython3.13-a225004c9245-compat-31b33d68c68a/bin/python -m pip install pyperf==2.10.0
+Requirement already satisfied: pyperf==2.10.0 in ./venv/cpython3.13-a225004c9245-compat-31b33d68c68a/lib/python3.13/site-packages (2.10.0)
+Requirement already satisfied: psutil>=5.9.0 in ./venv/cpython3.13-a225004c9245-compat-31b33d68c68a/lib/python3.13/site-packages (from pyperf==2.10.0) (7.2.2)
+Installing requirements into the virtual environment /io/tmp.x0bPey57gL/venv/cpython3.13-a225004c9245-compat-31b33d68c68a
+# /io/tmp.x0bPey57gL/venv/cpython3.13-a225004c9245-compat-31b33d68c68a/bin/python -m pip install psutil
+Requirement already satisfied: psutil in ./venv/cpython3.13-a225004c9245-compat-31b33d68c68a/lib/python3.13/site-packages (7.2.2)
+# /io/tmp.x0bPey57gL/venv/cpython3.13-a225004c9245-compat-31b33d68c68a/bin/python -m pip freeze
+packaging==26.0
+psutil==7.2.2
+pyperf==2.10.0
+setuptools==82.0.0
+wheel==0.46.3
+# /io/tmp.x0bPey57gL/venv/cpython3.13-a225004c9245-compat-31b33d68c68a/bin/python -m pip freeze
+packaging==26.0
+psutil==7.2.2
+pyperf==2.10.0
+setuptools==82.0.0
+wheel==0.46.3
+
+[1/2] compression...
+# /io/tmp.x0bPey57gL/venv/cpython3.13-a225004c9245-compat-31b33d68c68a/bin/python -u /io/tmp.x0bPey57gL/../custom/bm_compression/run_benchmark.py --rigorous --warmups=2 --output /tmp/tmp_hps34an --inherit-environ PYPERFORMANCE_RUNID
+.........................................
+WARNING: the benchmark result may be unstable
+* Not enough samples to get a stable result (95% certainly of less than 1% variation)
+
+Try to rerun the benchmark with more runs, values and/or loops.
+Run 'python -m pyperf system tune' command to reduce the system jitter.
+Use pyperf stats, pyperf dump and pyperf hist to analyze results.
+Use --quiet option to hide these warnings.
+
+bz2_compress_small: Mean +- std dev: 4.33 ms +- 0.11 ms
+.........................................
+WARNING: the benchmark result may be unstable
+* Not enough samples to get a stable result (95% certainly of less than 1% variation)
+
+Try to rerun the benchmark with more runs, values and/or loops.
+Run 'python -m pyperf system tune' command to reduce the system jitter.
+Use pyperf stats, pyperf dump and pyperf hist to analyze results.
+Use --quiet option to hide these warnings.
+
+bz2_compress_large: Mean +- std dev: 68.7 ms +- 2.1 ms
+.........................................
+lzma_compress_small: Mean +- std dev: 266 us +- 1 us
+.........................................
+lzma_compress_large: Mean +- std dev: 4.25 ms +- 0.02 ms
+.........................................
+WARNING: the benchmark result may be unstable
+* Not enough samples to get a stable result (95% certainly of less than 1% variation)
+
+Try to rerun the benchmark with more runs, values and/or loops.
+Run 'python -m pyperf system tune' command to reduce the system jitter.
+Use pyperf stats, pyperf dump and pyperf hist to analyze results.
+Use --quiet option to hide these warnings.
+
+bz2_decompress_small: Mean +- std dev: 146 us +- 13 us
+.........................................
+WARNING: the benchmark result may be unstable
+* Not enough samples to get a stable result (95% certainly of less than 1% variation)
+
+Try to rerun the benchmark with more runs, values and/or loops.
+Run 'python -m pyperf system tune' command to reduce the system jitter.
+Use pyperf stats, pyperf dump and pyperf hist to analyze results.
+Use --quiet option to hide these warnings.
+
+bz2_decompress_large: Mean +- std dev: 4.93 ms +- 0.17 ms
+.........................................
+lzma_decompress_small: Mean +- std dev: 8.75 us +- 0.06 us
+.........................................
+lzma_decompress_large: Mean +- std dev: 92.1 us +- 0.7 us
+[2/2] sqlite...
+# /io/tmp.x0bPey57gL/venv/cpython3.13-a225004c9245-compat-31b33d68c68a/bin/python -u /io/tmp.x0bPey57gL/../custom/bm_sqlite/run_benchmark.py --rigorous --warmups=2 --output /tmp/tmp2hhbay_t --inherit-environ PYPERFORMANCE_RUNID
+.........................................
+sqlite_create_table: Mean +- std dev: 38.1 ms +- 0.4 ms
+.........................................
+sqlite_insert: Mean +- std dev: 467 us +- 7 us
+.........................................
+sqlite_create_trigger: Mean +- std dev: 33.4 us +- 0.3 us
+
+Performance version: 1.14.0
+Python version: 3.13.12 (64-bit)
+Report on Linux-6.17.0-14-generic-x86_64-with-glibc2.41
+Number of logical CPUs: 16
+Start date: 2026-02-19 14:33:23.424945
+End date: 2026-02-19 14:40:39.583667
+
+### bz2_compress_small ###
+Mean +- std dev: 4.33 ms +- 0.11 ms
+
+### bz2_compress_large ###
+Mean +- std dev: 68.7 ms +- 2.1 ms
+
+### lzma_compress_small ###
+Mean +- std dev: 266 us +- 1 us
+
+### lzma_compress_large ###
+Mean +- std dev: 4.25 ms +- 0.02 ms
+
+### bz2_decompress_small ###
+Mean +- std dev: 146 us +- 13 us
+
+### bz2_decompress_large ###
+Mean +- std dev: 4.93 ms +- 0.17 ms
+
+### lzma_decompress_small ###
+Mean +- std dev: 8.75 us +- 0.06 us
+
+### lzma_decompress_large ###
+Mean +- std dev: 92.1 us +- 0.7 us
+
+### sqlite_create_table ###
+Mean +- std dev: 38.1 ms +- 0.4 ms
+
+### sqlite_insert ###
+Mean +- std dev: 467 us +- 7 us
+
+### sqlite_create_trigger ###
+Mean +- std dev: 33.4 us +- 0.3 us
+
+3.13.12 (main, Feb 12 2026, 00:45:41) [Clang 21.1.4 ]
