@@ -24,11 +24,11 @@ py -3.14 -m venv local_envs\org_env
 REM Run benchmarks
 
 call local_envs\pbs_env\Scripts\activate.bat
-call run_single.bat win-pbs
+call run_custom_single.bat win-pbs
 call local_envs\pbs_env\Scripts\deactivate.bat
 
-call "%CONDA%" run --prefix local_envs\cforge_env --live-stream run_single.bat win-conda-forge
+call "%CONDA%" run --prefix local_envs\cforge_env --live-stream run_custom_single.bat win-conda-forge
 
 call local_envs\org_env\Scripts\activate
-call run_single.bat win-python-org
+call run_custom_single.bat win-python-org
 call local_envs\org_env\Scripts\deactivate.bat
